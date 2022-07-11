@@ -1,0 +1,24 @@
+.services {
+  &__item {
+    position: relative;
+    transition: all .3s ease;
+
+    &:hover {
+      margin-top: -4px;
+      margin-bottom: 4px;
+      box-shadow: 0 0 15px $primary;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(1, 1, 1, 0.6);
+    width: 100%;
+    padding: 6px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+  }
+}

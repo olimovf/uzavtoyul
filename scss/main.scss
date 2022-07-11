@@ -1,0 +1,16 @@
+// base
+@import "./base/variables";
+@import "./base/base";
+
+// components
+@import "./components/icon-btn";
+@import "./components/navbar";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// section
+@import "./section/news";
+@import "./section/services";
+@import "./section/legal-basis";

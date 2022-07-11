@@ -1,0 +1,17 @@
+.icon-btn {
+    width: 35px;
+    height: 35px;
+    background: rgba(47, 80, 108, 0.16);
+    font-weight: 700;
+    color: $primary;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+        color: #fff;
+        background: $grad;
+    }
+}

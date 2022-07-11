@@ -1,0 +1,70 @@
+.navbar {
+	display: none;
+	background-color: $primary;
+	position: relative;
+	z-index: 10;
+
+	.dropdown {
+		width: 100%;
+		display: flex;
+		background-color: $primary;
+	}
+
+	.dropdown li {
+		position: relative;
+	}
+
+	.dropdown li a {
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		display: block;
+		padding: 10px;
+		transition: background-color .3s ease;
+
+		&:hover {
+			background-color: $blue;
+		}
+	}
+
+	.dropdown li ul {
+		position: absolute;
+		top: 100%;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: none;
+		line-height: normal;
+		background-color: $blue;
+	}
+
+	.dropdown li ul li a {
+		text-align: left;
+		color: #fff;
+		font-size: 14px;
+		padding: 10px;
+		display: block;
+		white-space: nowrap;
+		transition: text-indent .3s ease;
+	}
+
+	.dropdown li ul li a:hover {
+		background-color: $primary;
+		color: #fff;
+		text-indent: 6px;
+	}
+
+	.dropdown li ul li ul {
+		left: 100%;
+		top: 0;
+	}
+
+	ul li:hover>a {
+		background-color: $primary;
+		color: #fff !important;
+	}
+
+	ul li:hover>ul {
+		display: block;
+	}
+}

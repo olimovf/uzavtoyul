@@ -1,0 +1,29 @@
+.header {
+	background-image: url("../../img/cloud.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	&__icons {
+		display: flex;
+		gap: 10px;
+		padding: 0;
+		position: relative;
+		z-index: 2;
+	}
+
+	&__imgBx {
+		width: 90%;
+	}
+
+	&__logo-txt {
+		font-size: 28px;
+		font-weight: 700;
+		color: #002C3B;
+		line-height: 1;
+		text-transform: uppercase;
+
+		&:hover {
+			color: #002C3B;
+		}
+	}
+}
