@@ -20,6 +20,11 @@
 }
 
 @font-face {
+    font-family: $open600;
+    src: url("../../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
     font-family: $open700;
     src: url("../../fonts/OpenSans-Bold.ttf");
 }
@@ -102,6 +107,26 @@ a.file {
     color: $title-color;
 }
 
+.color-2 {
+    color: $gray;
+}
+
+.fw-300 {
+    font-family: $open300;
+}
+.fw-400 {
+    font-family: $open400;
+}
+.fw-500 {
+    font-family: $open500;
+}
+.fw-600 {
+    font-family: $open600;
+}
+.fw-700 {
+    font-family: $open700;
+}
+
 .link-color {
     color: $blue;
     transition: color .3s ease;
@@ -114,4 +139,5 @@ a.file {
 .section-title {
     font-size: 24px;
     color: $primary;
+    font-family: $open600;
 }

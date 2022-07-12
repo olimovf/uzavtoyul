@@ -17,6 +17,10 @@
   src: url("../../fonts/OpenSans-Medium.ttf");
 }
 @font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("../../fonts/OpenSans-SemiBold.ttf");
+}
+@font-face {
   font-family: "OpenSans-Bot";
   src: url("../../fonts/OpenSans-Bold.ttf");
 }
@@ -93,6 +97,30 @@ a.file:hover {
   color: #333;
 }
 
+.color-2 {
+  color: #707070;
+}
+
+.fw-300 {
+  font-family: "OpenSans-Light";
+}
+
+.fw-400 {
+  font-family: "OpenSans-Regular";
+}
+
+.fw-500 {
+  font-family: "OpenSans-Medium";
+}
+
+.fw-600 {
+  font-family: "OpenSans-SemiBold";
+}
+
+.fw-700 {
+  font-family: "OpenSans-Bot";
+}
+
 .link-color {
   color: #4678a1;
   transition: color 0.3s ease;
@@ -104,6 +132,7 @@ a.file:hover {
 .section-title {
   font-size: 24px;
   color: #2f506c;
+  font-family: "OpenSans-SemiBold";
 }
 
 .icon-btn {
@@ -123,7 +152,6 @@ a.file:hover {
 }
 
 .navbar {
-  display: none;
   background-color: #2f506c;
   position: relative;
   z-index: 10;
@@ -331,6 +359,59 @@ a.file:hover {
 .regional-department__item .carousel .carousel-control-prev {
   right: 24px;
   left: initial;
+}
+
+.info .weather-data .row {
+  background-color: #dfe1ff;
+}
+.info .weather-data .link-color {
+  font-size: 16px;
+}
+.info .weather-icon {
+  margin-top: -6px;
+}
+.info .calendar #dycalendar {
+  width: 100%;
+}
+.info .calendar #dycalendar table {
+  width: 100%;
+}
+.info .calendar #dycalendar table td {
+  color: #444;
+  padding: 10px;
+  cursor: pointer;
+}
+.info .calendar #dycalendar table td.dycalendar-target-date {
+  color: #fff;
+  background-color: #2f506c;
+}
+.info .calendar #dycalendar table td:not(.dycalendar-target-date):hover {
+  background-color: #eee;
+}
+.info .calendar #dycalendar table td:not(.dycalendar-target-date):nth-child(1), .info .calendar #dycalendar table td:not(.dycalendar-target-date):nth-child(7) {
+  color: #4678a1;
+  font-family: "OpenSans-SemiBold";
+}
+.info .calendar #dycalendar table tbody tr:first-child {
+  border-bottom: 1px solid #333;
+}
+.info .calendar .dycalendar-header .prev-btn,
+.info .calendar .dycalendar-header .next-btn {
+  font-family: "OpenSans-Bot";
+  color: #4678a1;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+.info .calendar .dycalendar-header .prev-btn:hover,
+.info .calendar .dycalendar-header .next-btn:hover {
+  color: #2f506c;
+}
+.info .calendar .dycalendar-header .dycalendar-span-month-year {
+  color: #333;
+  font-size: 20px;
+}
+.info .calendar .dycalendar-month-container {
+  padding: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

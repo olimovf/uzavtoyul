@@ -1,0 +1,79 @@
+.info {
+  .weather {
+    &-data {
+      .row {
+        background-color: #dfe1ff;
+      }
+
+      .link-color {
+        font-size: 16px;
+      }
+    }
+
+    &-icon {
+      margin-top: -6px;
+    }
+  }
+
+  .calendar {
+    #dycalendar {
+      width: 100%;
+
+      table {
+        width: 100%;
+
+        td {
+          color: $txt-color;
+          padding: 10px;
+          cursor: pointer;
+
+          &.dycalendar-target-date {
+            color: #fff;
+            background-color: $primary;
+          }
+
+          &:not(.dycalendar-target-date):hover {
+            background-color: #eee;
+          }
+
+          &:not(.dycalendar-target-date):nth-child(1),
+          &:not(.dycalendar-target-date):nth-child(7) {
+            color: $blue;
+            font-family: $open600;
+          }
+        }
+
+        tbody tr:first-child {
+          border-bottom: 1px solid $title-color;
+        }
+      }
+    }
+
+    .dycalendar {
+      &-header {
+
+        .prev-btn,
+        .next-btn {
+          font-family: $open700;
+          color: $blue;
+          font-size: 20px;
+          transition: color .3s ease;
+
+
+          &:hover {
+            color: $primary;
+          }
+        }
+
+        .dycalendar-span-month-year {
+          color: $title-color;
+          font-size: 20px;
+        }
+      }
+
+      &-month-container {
+        padding: 0;
+      }
+    }
+  }
+}

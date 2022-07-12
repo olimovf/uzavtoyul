@@ -63,3 +63,14 @@ new Chart("myPieChart", {
 $('[data-fancybox="gallery1"]').fancybox({
   loop: true,
 });
+
+// dycalendar
+
+dycalendar.draw({
+  target: '#dycalendar',
+  type: 'month',
+  dayformat: 'full',
+  monthformat: 'full',
+  highlighttargetdate: true,
+  prevnextbutton: 'show'
+})
