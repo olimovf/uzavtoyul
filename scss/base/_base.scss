@@ -102,6 +102,15 @@ a.file {
     color: $title-color;
 }
 
+.link-color {
+    color: $blue;
+    transition: color .3s ease;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
 .section-title {
     font-size: 24px;
     color: $primary;

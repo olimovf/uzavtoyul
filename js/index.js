@@ -57,3 +57,9 @@ new Chart("myPieChart", {
     },
   }
 });
+
+// fancybox
+
+$('[data-fancybox="gallery1"]').fancybox({
+  loop: true,
+});

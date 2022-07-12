@@ -16,6 +16,14 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+	<!-- JQUERY CSS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+		integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- FANCYBOX CSS -->
+	<link rel="stylesheet" href="./css/jquery.fancybox.css">
+
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="./css/main.css">
 </head>
@@ -645,16 +653,187 @@
 	</section>
 	<!-- /INDICATORS -->
 
+	<!-- VIDEO AND GALLERY -->
+	<section class="video-gallery my-4">
+		<div class="container">
+			<div class="row g-3">
+				<div class="col col-12 col-md-6">
+					<div class="video-wrapper position-relative border bg-light p-3">
+						<div class="line"></div>
+						<h2 class="section-title mb-3">Videoteka</h2>
+						<div class="ratio ratio-16x9">
+							<iframe src="https://youtube.com/embed/BXTvprTCiEM" title="YouTube video" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<div class="col col-12 col-md-6">
+					<div class="video-wrapper position-relative border bg-light p-3">
+						<div class="line"></div>
+						<h2 class="section-title mb-3">Videoteka</h2>
+						<div class="row g-2">
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery1.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery1.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery2.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery2.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery1.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery1.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery2.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery2.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery1.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery1.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery2.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery2.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery1.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery1.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+							<div class="col col-4 col-sm-3 col-md-4 col-lg-3">
+								<div class="imgBx">
+									<a href="./img/gallery2.jpg" data-fancybox="gallery1" class="fancybox">
+										<img src="./img/gallery2.jpg" alt="gallery-img" class="img-fluid img-thumbnail">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /VIDEO AND GALLERY -->
+
+	<!-- REGIONAL DEPARTMENTS -->
+	<section class="regional-department my-4">
+		<div class="container">
+			<div class="row bg-light">
+				<div class="col col-12 col-md-6">
+					<div class="regional-department__item py-3 position-relative">
+						<div class="line" style="left: -12px;"></div>
+						<h2 class="section-title mb-3">Hududiy bo'limlar</h2>
+					</div>
+				</div>
+				<div class="col col-12 col-md-6">
+					<div class="regional-department__item py-3 position-relative">
+						<div class="line"></div>
+						<h2 class="section-title mb-3">Rekvizitlar</h2>
+						<div id="regionalCarousel" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<h4 class="regional-department__item-title title-color">Farg'ona viloyati Avtomobil yo'llari xududiy
+										boshqarmasi</h4>
+									<p class="regional-department__item-data py-3 mb-0 txt-color"><i class="fas me-2 fa-user"></i> Nazirov
+										Oybek Yashinovich <br>Qabul kunlari:
+										Payshanba, 10:00 - 12:00</p>
+									<p class="regional-department__item-data py-3 mb-0"><i class="fas me-2 fa-location-dot"></i><a
+											class="link-color"
+											href="https://www.google.ru/maps/place/40%C2%B022'01.8%22N+71%C2%B046'19.0%22E/@40.367164,71.7697613,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d40.367164!4d71.77195"
+											target="_blank">Fargona shahar 150018,
+											Aeroport ko'chasi, 1-uy</a></p>
+									<p class="regional-department__item-data py-3 mb-0"><strong>Mo'ljal: </strong>Toshkent Axborot texnologiyalar universiteti Farg'ona filiali</p>
+									<p class="regional-department__item-data py-3 mb-0">
+										<strong class="d-block">Transport: </strong>
+										<span class="d-block ms-4"><strong>Avtobus: </strong>6A</span>
+									</p>
+									<div class="regional-department__item-data py-3">
+										<p class="mb-2"><i class="fas me-2 fa-phone"></i><a
+												href="tel:+(0 373) 226-39-46">(0 373) 226-39-46</a></p>
+										<p class="mb-0"><i class="fas me-2 fa-fax"></i><a
+												href="tel:+(0 373) 226-36-53">(0 373) 226-36-53</a></p>
+									</div>
+									<p class="regional-department__item-data py-3 mb-0"><i class="fas me-2 fa-envelope"></i><a
+											class="link-color" href="mailto:fargona@uzavtoyul.uz">fargona@uzavtoyul.uz</a></p>
+								</div>
+								<div class="carousel-item">
+									<h4 class="regional-department__item-title title-color">Andijon viloyati Avtomobil yo'llari xududiy boshqarmasi</h4>
+									<p class="regional-department__item-data py-3 mb-0 txt-color"><i class="fas me-2 fa-user"></i>Qorayev To'lqinjon Ashiraliyevich <br>
+										Qabul kunlari: Seshanba, 10:00 - 15:00</p>
+									<p class="regional-department__item-data py-3 mb-0"><i class="fas me-2 fa-location-dot"></i><a
+											class="link-color"
+											href="https://www.google.ru/maps/place/40%C2%B044'24.7%22N+72%C2%B019'16.7%22E/@40.7401944,72.3191169,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d40.7401944!4d72.3213056"
+											target="_blank">Andijon shahar, 710012 A.Yuldoshev ko'chasi, 30-uy</a></p>
+									<p class="regional-department__item-data py-3 mb-0"><strong>Mo'ljal: </strong>Andijon viloyat DAN boshqarmasi. Andijon viloyat Yo'l harakati xavfsizligi boshqarmasi</p>
+									<p class="regional-department__item-data py-3 mb-0">
+										<strong class="d-block">Transport: </strong>
+										<span class="d-block ms-4"><strong>Avtobus: </strong>7, 24.</span>
+									</p>
+									<div class="regional-department__item-data py-3">
+										<p class="mb-2"><i class="fas me-2 fa-phone"></i><a
+												href="tel:+(0 374) 224-10-17">(0 374) 224-10-17</a></p>
+										<p class="mb-0"><i class="fas me-2 fa-fax"></i><a
+												href="tel:+(0 374) 226-88-90">(0 374) 226-88-90</a></p>
+									</div>
+									<p class="regional-department__item-data py-3 mb-0"><i class="fas me-2 fa-envelope"></i><a
+											class="link-color" href="mailto:andijon@uzavtoyul.uz">andijon@uzavtoyul.uz</a></p>
+								</div>
+							</div>
+							<button class="mt-1 carousel-control-prev" type="button" data-bs-target="#regionalCarousel"
+								data-bs-slide="prev">
+								<i class="fas fa-caret-left"></i>
+							</button>
+							<button class="mt-1 carousel-control-next" type="button" data-bs-target="#regionalCarousel"
+								data-bs-slide="next">
+								<i class="fas fa-caret-right"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /REGIONAL DEPARTMENTS -->
+
+	<!-- -->
 	<!-- BOOTSTRAP JS -->
 	<!-- JavaScript Bundle with Popper -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
 		crossorigin="anonymous"></script>
 
+	<!-- JQUERY JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 	<!-- CHART JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"
 		integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- FANCYBOX JS -->
+	<script src="./js/jquery.fancybox.min.js"></script>
 
 	<!-- CUSTOM JS -->
 	<script src="./js/index.js"></script>
