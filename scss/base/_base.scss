@@ -114,15 +114,19 @@ a.file {
 .fw-300 {
     font-family: $open300;
 }
+
 .fw-400 {
     font-family: $open400;
 }
+
 .fw-500 {
     font-family: $open500;
 }
+
 .fw-600 {
     font-family: $open600;
 }
+
 .fw-700 {
     font-family: $open700;
 }
@@ -140,4 +144,31 @@ a.file {
     font-size: 24px;
     color: $primary;
     font-family: $open600;
+}
+
+.btn.btn-success {
+    background: #15ae00;
+    border: 1px solid #14a300;
+    color: #fff;
+    padding: 8px 16px;
+    transition: all .3s ease;
+
+    &:hover,
+    &:disabled,
+    &:focus {
+        background: #15c900;
+        border-color: #15c400;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    font-size: 16px;
+    display: none;
+
+    &.btn {
+        padding: 6px 12px;
+    }
 }

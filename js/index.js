@@ -1,3 +1,17 @@
+// langs active class
+
+const langs = document.querySelector('.langs');
+const langItems = langs.querySelectorAll('.icon-btn');
+
+langItems.forEach(item => {
+  item.addEventListener('click', function() {
+    for (const lang of langItems) {
+      lang.classList.remove('active');
+    }
+    this.classList.add('active');
+  })
+})
+
 // line graph
 
 const xValues = ['2021-yil yakuniga ko\'ra rejada (mlrd so\'m)', '2021-yil yakuniga ko\'ra amalda (mlrd so\'m)'];
@@ -90,13 +104,27 @@ function showResult() {
     bar.classList.remove('d-none');
   });
 
-  // infoForm.querySelectorAll('.info__form-label').forEach(label => {
-  //   label.classList.add('d-none');
-  // });
-
   radioInputs.forEach(input => {
     input.disabled = true;
   });
 
   infoForm.querySelector('.info__btn').disabled = true;
 }
+
+// back-to-top btn
+
+const backToTop = document.querySelector('.back-to-top');
+
+// When the user clicks on the button, scroll to the top of the document
+backToTop.addEventListener("click", function () {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+window.onscroll = function () {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+};

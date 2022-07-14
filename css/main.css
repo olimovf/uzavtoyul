@@ -135,6 +135,29 @@ a.file:hover {
   font-family: "OpenSans-SemiBold";
 }
 
+.btn.btn-success {
+  background: #15ae00;
+  border: 1px solid #14a300;
+  color: #fff;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+.btn.btn-success:hover, .btn.btn-success:disabled, .btn.btn-success:focus {
+  background: #15c900;
+  border-color: #15c400;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  font-size: 16px;
+  display: none;
+}
+.back-to-top.btn {
+  padding: 6px 12px;
+}
+
 .icon-btn {
   width: 35px;
   height: 35px;
@@ -235,6 +258,14 @@ a.file:hover {
 }
 .header__logo-txt:hover {
   color: #002C3B;
+}
+
+.footer {
+  background-color: #444;
+  color: #dcdcdc;
+}
+.footer a:hover {
+  color: #84aac9;
 }
 
 .news__card-item .item-title {
@@ -430,17 +461,6 @@ a.file:hover {
   position: absolute;
   left: 0;
   bottom: 0;
-}
-.info__btn {
-  background: #15ae00;
-  border: 1px solid #14a300;
-  color: #fff;
-  padding: 8px 16px;
-  transition: all 0.3s ease;
-}
-.info__btn:hover, .info__btn:disabled, .info__btn:focus {
-  background: #15c900;
-  border-color: #15c400;
 }
 
 /*# sourceMappingURL=main.css.map */

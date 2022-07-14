@@ -97,19 +97,4 @@
       }
     }
   }
-
-  &__btn {
-    background: #15ae00;
-    border: 1px solid #14a300;
-    color: #fff;
-    padding: 8px 16px;
-    transition: all .3s ease;
-
-    &:hover,
-    &:disabled,
-    &:focus {
-      background: #15c900;
-      border-color: #15c400;
-    }
-  }
 }
