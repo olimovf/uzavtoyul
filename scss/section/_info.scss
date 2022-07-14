@@ -51,14 +51,13 @@
 
     .dycalendar {
       &-header {
-
         .prev-btn,
         .next-btn {
           font-family: $open700;
           color: $blue;
           font-size: 20px;
           transition: color .3s ease;
-
+          user-select: none;
 
           &:hover {
             color: $primary;
@@ -74,6 +73,43 @@
       &-month-container {
         padding: 0;
       }
+    }
+  }
+
+  &__form {
+    .result-bar {
+      position: relative;
+      margin-top: -20px;
+
+      &-line {
+        width: 100%;
+        height: 2px;
+        background-color: #e3e3e3;
+      }
+
+      &-value {
+        background-color: $green;
+        height: 2px;
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__btn {
+    background: #15ae00;
+    border: 1px solid #14a300;
+    color: #fff;
+    padding: 8px 16px;
+    transition: all .3s ease;
+
+    &:hover,
+    &:disabled,
+    &:focus {
+      background: #15c900;
+      border-color: #15c400;
     }
   }
 }

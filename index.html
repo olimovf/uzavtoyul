@@ -822,6 +822,7 @@
 	</section>
 	<!-- /REGIONAL DEPARTMENTS -->
 
+	<!-- INFO SECTION -->
 	<section class="info my-4">
 		<div class="container">
 			<div class="row">
@@ -878,10 +879,119 @@
 						<div class="line"></div>
 						<h2 class="section-title">So'rovnoma</h2>
 						<h6>Qo'mita faoliyatini qanday baholaysiz?</h6>
+						<form class="info__form">
+							<ul class="py-3 pb-4 border-bottom">
+								<li class="my-1">
+									<div class="position-relative">
+										<input type="radio" name="answer" id="option0" class="info__form-input">
+										<label for="option0" class="fw-600 ms-2 title-color info__form-label">A'lo kamchiliklardan
+											holi</label>
+										<div class="result-bar w-100 d-none text-end">
+											1481 (71%)
+											<span class="result-bar-value" style="width: 71%;"></span>
+											<div class="result-bar-line"></div>
+										</div>
+									</div>
+								</li>
+								<li class="my-1">
+									<div class="position-relative">
+										<input type="radio" name="answer" id="option1" class="info__form-input">
+										<label for="option1" class="fw-600 ms-2 title-color info__form-label">Juda yaxshi</label>
+										<div class="result-bar w-100 d-none text-end">
+											85 (4%)
+											<span class="result-bar-value" style="width: 4%;"></span>
+											<div class="result-bar-line"></div>
+										</div>
+									</div>
+								</li>
+								<li class="my-1">
+									<div class="position-relative">
+										<input type="radio" name="answer" id="option2" class="info__form-input">
+										<label for="option2" class="fw-600 ms-2 title-color info__form-label">Yaxshi</label>
+										<div class="result-bar w-100 d-none text-end">
+											94 (5%)
+											<span class="result-bar-value" style="width: 5%;"></span>
+											<div class="result-bar-line"></div>
+										</div>
+									</div>
+								</li>
+								<li class="my-1">
+									<div class="position-relative">
+										<input type="radio" name="answer" id="option3" class="info__form-input">
+										<label for="option3" class="fw-600 ms-2 title-color info__form-label">O'rtacha</label>
+										<div class="result-bar w-100 d-none text-end">
+											74 (4%)
+											<span class="result-bar-value" style="width: 4%;"></span>
+											<div class="result-bar-line"></div>
+										</div>
+									</div>
+								</li>
+								<li class="my-1">
+									<div class="position-relative">
+										<input type="radio" name="answer" id="option4" class="info__form-input">
+										<label for="option4" class="fw-600 ms-2 title-color info__form-label">Qoniqarli</label>
+										<div class="result-bar w-100 d-none text-end">
+											119 (6%)
+											<span class="result-bar-value" style="width: 6%;"></span>
+											<div class="result-bar-line"></div>
+										</div>
+									</div>
+								</li>
+								<li class="my-1">
+									<div class="position-relative">
+										<input type="radio" name="answer" id="option5" class="info__form-input">
+										<label for="option5" class="fw-600 ms-2 title-color info__form-label">Bundan ham yaxshi qilsa
+											bo'ladi</label>
+										<div class="result-bar w-100 d-none text-end">
+											219 (11%)
+											<span class="result-bar-value" style="width: 11%;"></span>
+											<div class="result-bar-line"></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<button class="btn btn-success info__btn mt-3 mb-2 btn-sm d-block ms-auto	" type="button"
+								onclick="showResult()">Natijalar</button>
+						</form>
 					</div>
 				</div>
 			</div>
 	</section>
+	<!-- /INFO SECTION -->
+
+	<!-- MAP SECTION -->
+	<section class="map my-4">
+		<div class="container">
+			<div class="row mb-3">
+				<div class="col-12">
+					<div class="map__item position-relative bg-light p-3 pb-2">
+						<div class="line"></div>
+						<h2 class="section-title">Avtomobil yo`llari qo`mitasi va uning tarkibiy korxonalari manzil koordinatalari</h2>
+					</div>
+					<iframe style="width:100%;height:350px; border: 2px solid #ffffff;margin-bottom: -4px"
+						src="https://www.google.com/maps/d/embed?mid=1M-VNuaYS_ZIu0IUmyNLGTcpINY6Q8TzZ&ll=41.11427240812706%2C67.04488979977506&z=7"></iframe>
+				</div>
+			</div>
+			<div class="row g-2">
+				<div class="col-12 col-md-6">
+					<a href="https://my.gov.uz/" target="_blank">
+						<img class="" style="width: 100%; object-fit: cover; height: 60px;" src="./img/gov1.jpg" alt="gov1">
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<a href="http://gov.uz/" target="_blank">
+						<img class="" style="width: 100%; object-fit: cover; height: 60px;" src="./img/gov2.png" alt="gov2">
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<a href="http://cooper.uz/ru/organization/?SECTION_ID=39&ELEMENT_ID=5218" target="_blank">
+						<img class="" style="width: 100%; object-fit: cover; height: 60px;" src="./img/cooper.gif" alt="cooper">
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /MAP SECTION -->
 
 	<!-- BOOTSTRAP JS -->
 	<!-- JavaScript Bundle with Popper -->

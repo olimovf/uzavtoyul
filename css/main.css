@@ -401,6 +401,7 @@ a.file:hover {
   color: #4678a1;
   font-size: 20px;
   transition: color 0.3s ease;
+  user-select: none;
 }
 .info .calendar .dycalendar-header .prev-btn:hover,
 .info .calendar .dycalendar-header .next-btn:hover {
@@ -412,6 +413,34 @@ a.file:hover {
 }
 .info .calendar .dycalendar-month-container {
   padding: 0;
+}
+.info__form .result-bar {
+  position: relative;
+  margin-top: -20px;
+}
+.info__form .result-bar-line {
+  width: 100%;
+  height: 2px;
+  background-color: #e3e3e3;
+}
+.info__form .result-bar-value {
+  background-color: #15ae00;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.info__btn {
+  background: #15ae00;
+  border: 1px solid #14a300;
+  color: #fff;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+}
+.info__btn:hover, .info__btn:disabled, .info__btn:focus {
+  background: #15c900;
+  border-color: #15c400;
 }
 
 /*# sourceMappingURL=main.css.map */

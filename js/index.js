@@ -74,3 +74,29 @@ dycalendar.draw({
   highlighttargetdate: true,
   prevnextbutton: 'show'
 })
+
+// showResult btn
+
+function showResult() {
+  const infoForm = document.querySelector('.info__form');
+  const radioInputs = infoForm.querySelectorAll('.info__form-input');
+
+  if (!Array.from(radioInputs).some(inp => inp.checked == true)) {
+    alert('Birorta javobni tanlang');
+    return;
+  }
+
+  infoForm.querySelectorAll('.result-bar').forEach(bar => {
+    bar.classList.remove('d-none');
+  });
+
+  // infoForm.querySelectorAll('.info__form-label').forEach(label => {
+  //   label.classList.add('d-none');
+  // });
+
+  radioInputs.forEach(input => {
+    input.disabled = true;
+  });
+
+  infoForm.querySelector('.info__btn').disabled = true;
+}
