@@ -149,10 +149,11 @@ a.file:hover {
 
 .back-to-top {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
+  right: 12px;
+  bottom: 12px;
   font-size: 16px;
   display: none;
+  z-index: 99;
 }
 .back-to-top.btn {
   padding: 6px 12px;
@@ -218,13 +219,16 @@ a.file:hover {
   transition: text-indent 0.3s ease;
 }
 .navbar .dropdown li ul li a:hover {
-  background-color: #2f506c;
+  background-color: #3E6A8F;
   color: #fff;
-  text-indent: 6px;
 }
 .navbar .dropdown li ul li ul {
   left: 100%;
   top: 0;
+}
+.navbar .dropdown li ul li ul.left-side {
+  left: 0;
+  transform: translateX(-100%);
 }
 .navbar ul li:hover > a {
   background-color: #2f506c;
@@ -234,6 +238,49 @@ a.file:hover {
   display: block;
 }
 
+@media (max-width: 991px) {
+  .navbar .dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+  .navbar .dropdown.show-menu {
+    display: block;
+  }
+  .navbar .dropdown li {
+    width: 100%;
+  }
+  .navbar .dropdown li a {
+    text-align: left;
+  }
+  .navbar .dropdown li ul {
+    position: unset;
+    padding: 0 16px;
+  }
+  .navbar .dropdown li ul li a {
+    text-align: left;
+  }
+  .navbar .dropdown li ul li ul {
+    position: unset;
+    padding: 0 16px;
+  }
+  .navbar .dropdown li ul li ul.left-side {
+    transform: translateX(0);
+  }
+  .navbar .menu-bar {
+    width: 32px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  .navbar .menu-bar i {
+    color: #000;
+    font-size: 16px;
+  }
+}
 .header {
   background-image: url("../../img/cloud.jpg");
   background-size: cover;
@@ -241,6 +288,7 @@ a.file:hover {
 }
 .header__icons {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   padding: 0;
   position: relative;
@@ -339,6 +387,12 @@ a.file:hover {
 .legal-basis .nav-link {
   font-size: 18px;
 }
+.legal-basis .nav-tabs .nav-link {
+  border: none;
+}
+.legal-basis .nav-tabs .nav-link.active {
+  border-bottom: 2px solid #2f506c;
+}
 
 .video-gallery .video-wrapper .ratio {
   height: 210px;
@@ -365,6 +419,17 @@ a.file:hover {
 .regional-department__item-title {
   color: #707070;
   font-size: 22px;
+}
+.regional-department__item svg path {
+  transform: matrix(0.6, 0, 0, 0.55, 0, 0);
+  transition: transform 0.3s ease;
+  -webkit-tap-highlight-color: #000;
+  stroke-linejoin: round;
+  cursor: pointer;
+}
+.regional-department__item svg path:hover {
+  transform: matrix(0.6, 0, 0, 0.55, 4, -4.5);
+  fill: #F4F4F4;
 }
 .regional-department__item-data {
   border-bottom: 1px dotted #e8e8e8;
@@ -425,6 +490,7 @@ a.file:hover {
 }
 .info .calendar #dycalendar table tbody tr:first-child {
   border-bottom: 1px solid #333;
+  font-weight: 700;
 }
 .info .calendar .dycalendar-header .prev-btn,
 .info .calendar .dycalendar-header .next-btn {
@@ -461,6 +527,20 @@ a.file:hover {
   position: absolute;
   left: 0;
   bottom: 0;
+}
+
+.footer {
+  background-color: #444;
+  color: #dcdcdc;
+}
+.footer a:hover {
+  color: #84aac9;
+}
+
+.copyright {
+  background-color: #2b2b2b;
+  color: #dcdcdc;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=main.css.map */

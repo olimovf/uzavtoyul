@@ -1,19 +1,19 @@
 // langs active class
+$(document).ready(function () {
+  $('.langs .icon-btn').click(function () {
+    $(this).addClass('active').parent().siblings().find('.icon-btn').removeClass('active');
+  });
+});
 
-const langs = document.querySelector('.langs');
-const langItems = langs.querySelectorAll('.icon-btn');
 
-langItems.forEach(item => {
-  item.addEventListener('click', function() {
-    for (const lang of langItems) {
-      lang.classList.remove('active');
-    }
-    this.classList.add('active');
-  })
-})
+// navbar
+$('.menu-bar').click(function (e) { 
+  e.preventDefault();
+  $('.dropdown').toggleClass('show-menu');
+});
+
 
 // line graph
-
 const xValues = ['2021-yil yakuniga ko\'ra rejada (mlrd so\'m)', '2021-yil yakuniga ko\'ra amalda (mlrd so\'m)'];
 const yValues = [1400, 1470];
 
@@ -42,8 +42,8 @@ new Chart("myLineGraph", {
   }
 });
 
-// pie chart
 
+// pie chart
 const x = ["Yangi ish joylarini yaratish rejada", "Yangi ish joylarini yaratish amalda"];
 const y = [823, 824];
 const barColors = ["#80DC87", "#6F009B"];
@@ -72,14 +72,14 @@ new Chart("myPieChart", {
   }
 });
 
-// fancybox
 
+// fancybox
 $('[data-fancybox="gallery1"]').fancybox({
   loop: true,
 });
 
-// dycalendar
 
+// dycalendar
 dycalendar.draw({
   target: '#dycalendar',
   type: 'month',
@@ -89,42 +89,41 @@ dycalendar.draw({
   prevnextbutton: 'show'
 })
 
+
 // showResult btn
-
-function showResult() {
-  const infoForm = document.querySelector('.info__form');
-  const radioInputs = infoForm.querySelectorAll('.info__form-input');
-
-  if (!Array.from(radioInputs).some(inp => inp.checked == true)) {
-    alert('Birorta javobni tanlang');
-    return;
-  }
-
-  infoForm.querySelectorAll('.result-bar').forEach(bar => {
-    bar.classList.remove('d-none');
+$(document).ready(function () {
+  $('.info__btn').click(function (e) {
+    e.preventDefault();
+    if (!$('.info__form-input').toArray().some(inp => inp.checked)) {
+      alert("O'z javobingizni tanlang");
+      return;
+    }
+    $.each($('.info__form .result-bar'), function (ind, elem) {
+      $(elem).removeClass('d-none');
+    });
+    $.each($('.info__form-input'), function (ind, elem) {
+      $(elem).css('disabled', true);
+    });
+    this.disabled = true;
   });
-
-  radioInputs.forEach(input => {
-    input.disabled = true;
-  });
-
-  infoForm.querySelector('.info__btn').disabled = true;
-}
-
-// back-to-top btn
-
-const backToTop = document.querySelector('.back-to-top');
-
-// When the user clicks on the button, scroll to the top of the document
-backToTop.addEventListener("click", function () {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
 });
 
-window.onscroll = function () {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    backToTop.style.display = "block";
-  } else {
-    backToTop.style.display = "none";
-  }
-};
+
+// back-to-top btn
+// When the user clicks on the button, scroll to the top of the document
+
+$(document).ready(function () {
+  $('.back-to-top').click(function (e) {
+    e.preventDefault();
+    $(document.body).scrollTop(0);
+    $(document.documentElement).scrollTop(0);
+  });
+  
+  $(window).scroll(function () {
+    if ($(document.body).scrollTop() > 100 || $(document.documentElement).scrollTop() > 100) {
+      $('.back-to-top').css('display', 'block');
+    } else {
+      $('.back-to-top').css('display', 'none');
+    }
+  });
+});

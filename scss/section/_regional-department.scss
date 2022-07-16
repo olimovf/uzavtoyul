@@ -5,6 +5,21 @@
       font-size: 22px;
     }
 
+    svg {
+      path {
+        transform: matrix(0.6, 0, 0, 0.55, 0, 0);
+        transition: transform .3s ease;
+        -webkit-tap-highlight-color: #000;
+        stroke-linejoin: round;
+        cursor: pointer;
+
+        &:hover {
+          transform: matrix(0.6, 0, 0, 0.55, 4, -4.5);
+          fill: #F4F4F4;
+        }
+      }
+    }
+
     font-size: 16px;
     font-family: $open500;
 
@@ -13,6 +28,7 @@
     }
 
     .carousel {
+
       .carousel-control-prev,
       .carousel-control-next {
         position: absolute;
@@ -22,16 +38,16 @@
         border-radius: 2px;
         transition: background-color .3s ease;
         top: -45px;
-  
+
         .fas {
           font-size: 14px;
         }
-  
+
         &:hover {
           background-color: $primary;
         }
       }
-  
+
       .carousel-control-prev {
         right: 24px;
         left: initial;
