@@ -5,8 +5,8 @@
         background-color: #dfe1ff;
       }
 
-      .link-color {
-        font-size: 16px;
+      .link-color, .currency {
+        font-size: 15px;
       }
     }
 
@@ -26,6 +26,7 @@
           color: $txt-color;
           padding: 10px;
           cursor: pointer;
+          font-size: 14px;
 
           &.dycalendar-target-date {
             color: #fff;
@@ -88,7 +89,7 @@
         background-color: #e3e3e3;
       }
 
-      &-value {
+      &-bg {
         background-color: $green;
         height: 2px;
         display: block;
@@ -96,6 +97,13 @@
         left: 0;
         bottom: 0;
       }
+
+      &-value {
+        font-size: 15px;
+      }
+    }
+    &-label {
+      font-size: 15px;
     }
   }
 }

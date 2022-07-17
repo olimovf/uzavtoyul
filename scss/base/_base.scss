@@ -55,34 +55,35 @@ a {
     &:hover {
         color: $primary;
     }
-}
 
-a.detail {
-    width: 100%;
-    text-align: right;
-    color: $blue;
-    // transition: color .3s ease;
-    font-weight: 600;
-    font-size: 14px;
+    &.detail {
+        width: 100%;
+        text-align: right;
+        color: $blue;
+        font-weight: 600;
+        font-size: 14px;
 
-    &:hover {
-        color: $primary;
-    }
-}
-
-a.file {
-    color: $blue;
-    padding: 8px;
-    display: inline-block;
-    font-size: 14px;
-
-    .fas {
-        font-size: 18px;
+        &:hover {
+            color: $primary;
+        }
     }
 
-    &:hover {
-        background: $green;
-        color: #fff;
+    &.file {
+        color: $blue;
+        padding: 8px;
+        font-size: 14px;
+        display: inline-flex;
+        align-items: center;
+
+        .fas {
+            font-size: 18px;
+            margin-right: 4px;
+        }
+
+        &:hover {
+            background: $green;
+            color: #fff;
+        }
     }
 }
 

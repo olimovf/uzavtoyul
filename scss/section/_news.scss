@@ -2,8 +2,12 @@
   &__card {
     &-item {
       .item-title {
-        font-size: 18px;
+        font-size: 17px;
         line-height: 1;
+
+        a {
+          font-size: 17px;
+        }
       }
     }
 
@@ -12,6 +16,7 @@
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 4;
       overflow: hidden;
+      font-size: 15px;
     }
   }
 
@@ -50,7 +55,13 @@
     }
   }
 
-  .news__item {
-    position: relative;
+  &__item {
+    p {
+      font-size: 15px;
+    }
+
+    &-tel {
+      font-size: 20px;
+    }
   }
 }

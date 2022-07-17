@@ -34,27 +34,27 @@
 				<div class="col-6 pt-2 pb-2">
 					<ul class="header__icons">
 						<li class="header__icons-item">
-							<div class="icon-btn">
+							<div class="icon-btn visual">
 								<i class="fas fa-eye-slash"></i>
 							</div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">
+							<div class="icon-btn disabled">
 								<i class="fas fa-microphone"></i>
 							</div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">
+							<div class="icon-btn font-increase">
 								<i class="fas fa-plus"></i>
 							</div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">
+							<div class="icon-btn font-decrease">
 								<i class="fas fa-minus"></i>
 							</div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">
+							<div class="icon-btn disabled">
 								<i class="fas fa-sitemap"></i>
 							</div>
 						</li>
@@ -63,16 +63,16 @@
 				<div class="col-6 pt-2 pb-2">
 					<ul class="header__icons justify-content-end langs">
 						<li class="header__icons-item">
-							<div class="icon-btn active">O'z</div>
+							<div class="icon-btn active"><span>O'z</span></div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">Ўз</div>
+							<div class="icon-btn"><span>Ўз</span></div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">Ру</div>
+							<div class="icon-btn"><span>Ру</span></div>
 						</li>
 						<li class="header__icons-item">
-							<div class="icon-btn">En</div>
+							<div class="icon-btn"><span>En</span></div>
 						</li>
 					</ul>
 				</div>
@@ -282,7 +282,7 @@
 		<div class="container">
 			<div class="row bg-light">
 				<div class="col-12 col-lg-4 col-md-6">
-					<div class="news__item p-2" style="left: -12px;">
+					<div class="news__item position-relative p-2" style="left: -12px;">
 						<div class="line"></div>
 						<h2 class="section-title mb-3">Qo'mita haqida</h2>
 						<div class="card border-0">
@@ -298,7 +298,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-lg-5 col-md-6">
-					<div class="news__item p-2">
+					<div class="news__item position-relative p-2">
 						<div class="line"></div>
 						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
 							<div class="carousel-inner">
@@ -467,11 +467,11 @@
 				<div class="col-12 col-lg-3 col-md-12">
 					<div class="row">
 						<div class="col-12 col-sm-6 col-lg-12 mb-3 mb-sm-0 mb-lg-3">
-							<div class="news__item p-2">
+							<div class="news__item position-relative p-2">
 								<div class="line"></div>
 								<h2 class="section-title mb-3">Ishonch telefoni</h2>
 								<div class="card border-0">
-									<a class="title-color fs-5 fw-500" href="tel:+99871 207-67-68"><i class="fas fa-phone"></i>+99871
+									<a class="title-color news__item-tel fw-500" href="tel:+99871 207-67-68"><i class="fas fa-phone"></i>+99871
 										207-67-68</a>
 									<p class="txt-color my-2">Dushanba - Juma 9:00 - 17:00</p>
 									<a href="#" class="file"><i class="fas fa-file-pdf"></i> Reglament (PDF 112 KB)</a>
@@ -479,11 +479,11 @@
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-lg-12">
-							<div class="news__item p-2">
+							<div class="news__item position-relative p-2">
 								<div class="line"></div>
 								<h2 class="section-title mb-3">Yagona telefon</h2>
 								<div class="card border-0">
-									<a class="title-color fs-5 fw-500" href="tel:+99871 200-02-04"><i class="fas fa-phone"></i>+99871
+									<a class="title-color news__item-tel fw-500" href="tel:+99871 200-02-04"><i class="fas fa-phone"></i>+99871
 										200-02-04</a>
 									<p class="txt-color my-2">Dushanba - Juma 9:00 - 17:00</p>
 									<a href="#" class="file"><i class="fas fa-file-pdf"></i> Reglament (PDF 112 KB)</a>
@@ -641,14 +641,14 @@
 			<div class="row">
 				<div class="col-12 col-lg-6 p-2">
 					<canvas id="myLineGraph" class="w-100"></canvas>
-					<p class="txt-color text-center my-1">2021-yil yakuniga ko'ra Avtomobil yo'llari qo'mitasida Investitsiya
+					<p class="txt-color text-center my-1" style="font-size: 16px;">2021-yil yakuniga ko'ra Avtomobil yo'llari qo'mitasida Investitsiya
 						dasturi bo'yicha ma'lumot</p>
 				</div>
 				<div class="col-12 col-lg-6 p-2">
 					<div class="chart-container" style="width: 280px; height: 280px; margin: auto;">
 						<canvas id="myPieChart"></canvas>
 					</div>
-					<p class="txt-color text-center my-1">2021 yil yakuniga ko'ra Avtomobil yo'llari qo'mitasida yangi ish
+					<p class="txt-color text-center my-1" style="font-size: 16px;">2021 yil yakuniga ko'ra Avtomobil yo'llari qo'mitasida yangi ish
 						joylarini yarartish to'g'risida ma'lumot.</p>
 				</div>
 			</div>
@@ -901,9 +901,9 @@
 									<h6 class="color-2 fw-600">Markaziy bank <br> valyuta kurslari</h6>
 								</div>
 								<div class="col">
-									<p class="mb-0 fs-6 txt-color fw-500">1 EUR = 11138.18</p>
-									<p class="mb-0 fs-6 txt-color fw-500">1 RUB = 172.46</p>
-									<p class="mb-0 fs-6 txt-color fw-500">1 USD = 10912.30</p>
+									<p class="mb-0 currency txt-color fw-500">1 EUR = 11138.18</p>
+									<p class="mb-0 currency txt-color fw-500">1 RUB = 172.46</p>
+									<p class="mb-0 currency txt-color fw-500">1 USD = 10912.30</p>
 								</div>
 								<div class="col-12 text-end">
 									<a class="link-color" href="http://www.cbu.uz/" target="_blank">www.cbu.uz</a>
@@ -925,15 +925,15 @@
 						<h2 class="section-title">So'rovnoma</h2>
 						<h6 class="txt-color fw-500">Qo'mita faoliyatini qanday baholaysiz?</h6>
 						<form class="info__form">
-							<ul class="py-3 pb-4 border-bottom">
+							<ul class="pt-2 pb-4 border-bottom">
 								<li class="my-1">
 									<div class="position-relative">
 										<input type="radio" name="answer" id="option0" class="info__form-input">
 										<label for="option0" class="fw-600 ms-2 title-color info__form-label">A'lo kamchiliklardan
 											holi</label>
 										<div class="result-bar w-100 d-none text-end">
-											1481 (71%)
-											<span class="result-bar-value" style="width: 71%;"></span>
+											<span class="result-bar-value">1481 (71%)</span>
+											<span class="result-bar-bg" style="width: 71%;"></span>
 											<div class="result-bar-line"></div>
 										</div>
 									</div>
@@ -943,8 +943,8 @@
 										<input type="radio" name="answer" id="option1" class="info__form-input">
 										<label for="option1" class="fw-600 ms-2 title-color info__form-label">Juda yaxshi</label>
 										<div class="result-bar w-100 d-none text-end">
-											85 (4%)
-											<span class="result-bar-value" style="width: 4%;"></span>
+											<span class="result-bar-value">85 (4%)</span>
+											<span class="result-bar-bg" style="width: 4%;"></span>
 											<div class="result-bar-line"></div>
 										</div>
 									</div>
@@ -954,8 +954,8 @@
 										<input type="radio" name="answer" id="option2" class="info__form-input">
 										<label for="option2" class="fw-600 ms-2 title-color info__form-label">Yaxshi</label>
 										<div class="result-bar w-100 d-none text-end">
-											94 (5%)
-											<span class="result-bar-value" style="width: 5%;"></span>
+											<span class="result-bar-value">94 (5%)</span>
+											<span class="result-bar-bg" style="width: 5%;"></span>
 											<div class="result-bar-line"></div>
 										</div>
 									</div>
@@ -965,8 +965,8 @@
 										<input type="radio" name="answer" id="option3" class="info__form-input">
 										<label for="option3" class="fw-600 ms-2 title-color info__form-label">O'rtacha</label>
 										<div class="result-bar w-100 d-none text-end">
-											74 (4%)
-											<span class="result-bar-value" style="width: 4%;"></span>
+											<span class="result-bar-value">74 (4%)</span>
+											<span class="result-bar-bg" style="width: 4%;"></span>
 											<div class="result-bar-line"></div>
 										</div>
 									</div>
@@ -976,8 +976,8 @@
 										<input type="radio" name="answer" id="option4" class="info__form-input">
 										<label for="option4" class="fw-600 ms-2 title-color info__form-label">Qoniqarli</label>
 										<div class="result-bar w-100 d-none text-end">
-											119 (6%)
-											<span class="result-bar-value" style="width: 6%;"></span>
+											<span class="result-bar-value">119 (6%)</span>
+											<span class="result-bar-bg" style="width: 6%;"></span>
 											<div class="result-bar-line"></div>
 										</div>
 									</div>
@@ -988,8 +988,8 @@
 										<label for="option5" class="fw-600 ms-2 title-color info__form-label">Bundan ham yaxshi qilsa
 											bo'ladi</label>
 										<div class="result-bar w-100 d-none text-end">
-											219 (11%)
-											<span class="result-bar-value" style="width: 11%;"></span>
+											<span class="result-bar-value">219 (11%)</span>
+											<span class="result-bar-bg" style="width: 11%;"></span>
 											<div class="result-bar-line"></div>
 										</div>
 									</div>

@@ -2,6 +2,15 @@
   background-color: #444;
   color: #dcdcdc;
 
+  &__title {
+    font-size: 26px;
+  }
+
+  li,
+  a {
+    font-size: 14px;
+  }
+
   a:hover {
     color: #84aac9;
   }

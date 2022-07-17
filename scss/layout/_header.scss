@@ -10,6 +10,10 @@
 		padding: 0;
 		position: relative;
 		z-index: 2;
+
+		.icon-btn span {
+			font-size: 16px;
+		}
 	}
 
 	&__imgBx {
