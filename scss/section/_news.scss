@@ -4,10 +4,18 @@
       .item-title {
         font-size: 17px;
         line-height: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
 
         a {
           font-size: 17px;
         }
+      }
+
+      a {
+        padding-right: 5px;
       }
     }
 
@@ -41,18 +49,20 @@
     }
 
     .carousel-control-prev {
-      right: 48px;
+      right: 24px;
+      // right: 48px;
       left: initial;
     }
 
     .carousel-control-next {
-      right: 24px;
+      right: 0px;
+      // right: 24px;
     }
 
-    .carousel-control-next.rss {
-      position: absolute;
-      right: 0px;
-    }
+    // .carousel-control-next.rss {
+    //   position: absolute;
+    //   right: 0px;
+    // }
   }
 
   &__item {

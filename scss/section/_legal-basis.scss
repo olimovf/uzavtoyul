@@ -16,6 +16,11 @@
   .nav-tabs {
     .nav-link {
       border: none;
+      outline: none;
+
+      &:focus {
+        border: none;
+      }
 
       &.active {
         border-bottom: 2px solid $primary;

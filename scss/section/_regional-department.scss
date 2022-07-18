@@ -6,6 +6,8 @@
     }
 
     svg {
+      margin-top: 20px;
+
       path {
         transform: matrix(0.6, 0, 0, 0.55, 0, 0);
         transition: transform .3s ease;
@@ -21,13 +23,22 @@
     }
 
     font-family: $open500;
-    
+
     &-data {
       font-size: 16px;
       border-bottom: 1px dotted #e8e8e8;
     }
 
     .carousel {
+      &-item {
+        p {
+          color: $txt-color;
+        }
+
+        strong {
+          color: $title-color;
+        }
+      }
 
       .carousel-control-prev,
       .carousel-control-next {

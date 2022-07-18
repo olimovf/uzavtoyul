@@ -36,6 +36,11 @@
 		display: none;
 		line-height: normal;
 		background-color: $blue;
+
+		&.left-side {
+			left: 100%;
+			transform: translateX(-100%);
+		}
 	}
 
 	.dropdown li ul li a {
@@ -95,6 +100,11 @@
 				ul {
 					position: unset;
 					padding: 0 16px;
+					
+					&.left-side {
+						left: 0;
+						transform: translateX(0);
+					}
 
 					li {
 						a {
@@ -122,7 +132,7 @@
 			display: grid;
 			place-items: center;
 			cursor: pointer;
-			
+
 			i {
 				color: #000;
 				font-size: 16px;
