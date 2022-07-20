@@ -144,6 +144,7 @@ a.file:hover {
   color: #fff;
   padding: 8px 16px;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 .btn.btn-success:hover, .btn.btn-success:disabled, .btn.btn-success:focus {
   background: #15c900;
@@ -162,12 +163,6 @@ a.file:hover {
   padding: 6px 12px;
 }
 
-@media (max-width: 575px) {
-  .btn.btn-success {
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-}
 .icon-btn {
   width: 35px;
   height: 35px;
@@ -256,57 +251,7 @@ a.file:hover {
   background-color: #2f506c;
   color: #fff !important;
 }
-.navbar ul li:hover > ul {
-  display: block;
-}
 
-@media (max-width: 991px) {
-  .navbar .dropdown {
-    flex-direction: column;
-    align-items: flex-start;
-    display: none;
-  }
-  .navbar .dropdown.show-menu {
-    display: block;
-  }
-  .navbar .dropdown li {
-    width: 100%;
-  }
-  .navbar .dropdown li a {
-    text-align: left;
-  }
-  .navbar .dropdown li ul {
-    position: unset;
-    padding: 0 16px;
-  }
-  .navbar .dropdown li ul.left-side {
-    left: 0;
-    transform: translateX(0);
-  }
-  .navbar .dropdown li ul li a {
-    text-align: left;
-  }
-  .navbar .dropdown li ul li ul {
-    position: unset;
-    padding: 0 16px;
-  }
-  .navbar .dropdown li ul li ul.left-side {
-    transform: translateX(0);
-  }
-  .navbar .menu-bar {
-    width: 32px;
-    height: 30px;
-    border-radius: 4px;
-    background-color: #fff;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-  }
-  .navbar .menu-bar i {
-    color: #000;
-    font-size: 16px;
-  }
-}
 .header {
   background-image: url("../../img/cloud.jpg");
   background-size: cover;
@@ -619,6 +564,65 @@ a.file:hover {
 }
 .copyright p {
   font-size: 13px;
+}
+
+@media (min-width: 991px) {
+  .navbar ul li:hover > ul {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .navbar .dropdown {
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+  }
+  .navbar .dropdown.show-menu {
+    display: block;
+  }
+  .navbar .dropdown li {
+    width: 100%;
+  }
+  .navbar .dropdown li a {
+    text-align: left;
+  }
+  .navbar .dropdown li ul {
+    position: unset;
+    padding: 0 16px;
+  }
+  .navbar .dropdown li ul.left-side {
+    left: 0;
+    transform: translateX(0);
+  }
+  .navbar .dropdown li ul li a {
+    text-align: left;
+  }
+  .navbar .dropdown li ul li ul {
+    position: unset;
+    padding: 0 16px;
+  }
+  .navbar .dropdown li ul li ul.left-side {
+    transform: translateX(0);
+  }
+  .navbar .menu-bar {
+    width: 32px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #fff;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+  .navbar .menu-bar i {
+    color: #000;
+    font-size: 16px;
+  }
+}
+@media (max-width: 575px) {
+  .btn.btn-success {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

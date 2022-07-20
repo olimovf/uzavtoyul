@@ -157,6 +157,7 @@ a {
     color: #fff;
     padding: 8px 16px;
     transition: all .3s ease;
+    font-size: 16px;
 
     &:hover,
     &:disabled,
@@ -176,12 +177,5 @@ a {
 
     &.btn {
         padding: 6px 12px;
-    }
-}
-
-@media (max-width: 575px) {
-    .btn.btn-success {
-        padding: 5px 10px;
-        font-size: 14px;
     }
 }
