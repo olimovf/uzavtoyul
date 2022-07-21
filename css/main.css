@@ -199,7 +199,8 @@ a.file:hover {
 .navbar .dropdown li {
   position: relative;
 }
-.navbar .dropdown li a {
+.navbar .dropdown li a, .navbar .dropdown li p {
+  cursor: pointer;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -208,7 +209,7 @@ a.file:hover {
   transition: background-color 0.3s ease;
   font-size: 14px;
 }
-.navbar .dropdown li a:hover {
+.navbar .dropdown li a:hover, .navbar .dropdown li p:hover {
   background-color: #4678a1;
 }
 .navbar .dropdown li ul {
@@ -225,7 +226,8 @@ a.file:hover {
   left: 100%;
   transform: translateX(-100%);
 }
-.navbar .dropdown li ul li a {
+.navbar .dropdown li ul li a, .navbar .dropdown li ul li p {
+  cursor: pointer;
   text-align: left;
   color: #fff;
   font-size: 14px;
@@ -234,7 +236,7 @@ a.file:hover {
   white-space: nowrap;
   transition: text-indent 0.3s ease;
 }
-.navbar .dropdown li ul li a:hover {
+.navbar .dropdown li ul li a:hover, .navbar .dropdown li ul li p:hover {
   background-color: #3E6A8F;
   color: #fff;
   text-indent: 6px;
@@ -583,7 +585,8 @@ a.file:hover {
   .navbar .dropdown li {
     width: 100%;
   }
-  .navbar .dropdown li a {
+  .navbar .dropdown li a,
+.navbar .dropdown li p {
     text-align: left;
   }
   .navbar .dropdown li ul {
@@ -594,7 +597,8 @@ a.file:hover {
     left: 0;
     transform: translateX(0);
   }
-  .navbar .dropdown li ul li a {
+  .navbar .dropdown li ul li a,
+.navbar .dropdown li ul li p {
     text-align: left;
   }
   .navbar .dropdown li ul li ul {

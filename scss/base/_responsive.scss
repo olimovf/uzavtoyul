@@ -20,7 +20,8 @@
       li {
         width: 100%;
 
-        a {
+        a,
+        p {
           text-align: left;
         }
 
@@ -34,7 +35,9 @@
           }
 
           li {
-            a {
+
+            a,
+            p {
               text-align: left;
             }
 

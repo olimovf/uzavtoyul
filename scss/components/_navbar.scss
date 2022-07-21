@@ -13,7 +13,8 @@
 		position: relative;
 	}
 
-	.dropdown li a {
+	.dropdown li a, .dropdown li p {
+		cursor: pointer;
 		color: #fff;
 		text-align: center;
 		text-decoration: none;
@@ -43,7 +44,8 @@
 		}
 	}
 
-	.dropdown li ul li a {
+	.dropdown li ul li a, .dropdown li ul li p {
+		cursor: pointer;
 		text-align: left;
 		color: #fff;
 		font-size: 14px;
@@ -53,7 +55,7 @@
 		transition: text-indent .3s ease;
 	}
 
-	.dropdown li ul li a:hover {
+	.dropdown li ul li a:hover, .dropdown li ul li p:hover {
 		background-color: #3E6A8F;
 		color: #fff;
 		text-indent: 6px;
