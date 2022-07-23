@@ -199,7 +199,8 @@ a.file:hover {
 .navbar .dropdown li {
   position: relative;
 }
-.navbar .dropdown li a, .navbar .dropdown li p {
+.navbar .dropdown li a,
+.navbar .dropdown li p {
   cursor: pointer;
   color: #fff;
   text-align: center;
@@ -209,7 +210,8 @@ a.file:hover {
   transition: background-color 0.3s ease;
   font-size: 14px;
 }
-.navbar .dropdown li a:hover, .navbar .dropdown li p:hover {
+.navbar .dropdown li a:hover,
+.navbar .dropdown li p:hover {
   background-color: #4678a1;
 }
 .navbar .dropdown li ul {
@@ -226,7 +228,8 @@ a.file:hover {
   left: 100%;
   transform: translateX(-100%);
 }
-.navbar .dropdown li ul li a, .navbar .dropdown li ul li p {
+.navbar .dropdown li ul li a,
+.navbar .dropdown li ul li p {
   cursor: pointer;
   text-align: left;
   color: #fff;
@@ -236,7 +239,8 @@ a.file:hover {
   white-space: nowrap;
   transition: text-indent 0.3s ease;
 }
-.navbar .dropdown li ul li a:hover, .navbar .dropdown li ul li p:hover {
+.navbar .dropdown li ul li a:hover,
+.navbar .dropdown li ul li p:hover {
   background-color: #3E6A8F;
   color: #fff;
   text-indent: 6px;
@@ -360,6 +364,15 @@ a.file:hover {
   margin-bottom: 4px;
   box-shadow: 0 0 15px #2f506c;
 }
+.services__imgBx {
+  width: 100%;
+  height: 170px;
+}
+.services__imgBx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .services__title {
   position: absolute;
   left: 0;
@@ -474,6 +487,8 @@ a.file:hover {
 }
 .info .weather-icon {
   margin-top: -6px;
+  width: 50px;
+  height: 50px;
 }
 .info .calendar #dycalendar {
   width: 100%;
@@ -582,30 +597,30 @@ a.file:hover {
   .navbar .dropdown.show-menu {
     display: block;
   }
-  .navbar .dropdown li {
+  .navbar .dropdown li,
+.navbar .dropdown li ul li {
     width: 100%;
   }
   .navbar .dropdown li a,
-.navbar .dropdown li p {
-    text-align: left;
-  }
-  .navbar .dropdown li ul {
-    position: unset;
-    padding: 0 16px;
-  }
-  .navbar .dropdown li ul.left-side {
-    left: 0;
-    transform: translateX(0);
-  }
-  .navbar .dropdown li ul li a,
+.navbar .dropdown li p,
+.navbar .dropdown li ul li a,
 .navbar .dropdown li ul li p {
     text-align: left;
   }
-  .navbar .dropdown li ul li ul {
+  .navbar .dropdown li a:hover,
+.navbar .dropdown li p:hover,
+.navbar .dropdown li ul li a:hover,
+.navbar .dropdown li ul li p:hover {
+    text-indent: 0;
+  }
+  .navbar .dropdown li ul,
+.navbar .dropdown li ul li ul {
     position: unset;
     padding: 0 16px;
   }
-  .navbar .dropdown li ul li ul.left-side {
+  .navbar .dropdown li ul.left-side,
+.navbar .dropdown li ul li ul.left-side {
+    left: 0;
     transform: translateX(0);
   }
   .navbar .menu-bar {

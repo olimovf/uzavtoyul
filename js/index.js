@@ -1,3 +1,6 @@
+const city = 'Toshkent',
+  apiKey = '7a13b51f1f360b2a5e6559a9c06c1a51';
+
 $(document).ready(function () {
   /* theme for visually impaired */
   $('.visual').click(function (e) {
@@ -45,6 +48,31 @@ $(document).ready(function () {
   });
 
   /* navbar */
+  $('.dropdown__item > p').click(function (e) {
+    e.preventDefault();
+    if ($(this).parent().find('.dropdown__list').hasClass('d-block')) {
+      $(this).parent().find('.dropdown__list').removeClass('d-block');
+    } else {
+      $(this).parent().find('.dropdown__list').addClass('d-block');
+      $(this).parent().siblings().find('.dropdown__list').removeClass('d-block');
+    }
+  });
+
+  $('.dropdown__list-item > p').click(function (e) {
+    e.preventDefault();
+    if ($(this).parent().find('.dropdown__sublist').hasClass('d-block')) {
+      $(this).parent().find('.dropdown__sublist').removeClass('d-block');
+    } else {
+      $(this).parent().find('.dropdown__sublist').addClass('d-block');
+      $(this).parent().siblings().find('.dropdown__sublist').removeClass('d-block');
+    }
+  });
+
+  $('.dropdown a').click(function (e) {
+    e.preventDefault();
+    $('.dropdown').removeClass('show-menu');
+  });
+
   $('.menu-bar').click(function (e) {
     e.preventDefault();
     $('.dropdown').toggleClass('show-menu');
@@ -155,33 +183,20 @@ $(document).ready(function () {
     }
   });
 
-  /* media query */
-  // $(document).load($(window).bind("resize", function checkPosition() {
-  //   if (window.matchMedia('(max-width: 767px)').matches) {
-  //     $('.dropdown li').addClass('mobile');
-  //   } else {
-  //     $('.dropdown li').removeClass('mobile');
-  //   }
-  // }));
-
-  $('.dropdown__item > p').click(function (e) { 
-    e.preventDefault();
-    console.log($(this).parent())
-    if ($(this).parent().find('.dropdown__list').hasClass('d-block')) {
-      $(this).parent().find('.dropdown__list').removeClass('d-block');
-    } else {
-      $(this).parent().find('.dropdown__list').addClass('d-block');
-      $(this).parent().siblings().find('.dropdown__list').removeClass('d-block');
+  /* get weather data */
+  $.ajax({
+    url: `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`,
+    success: function (res) {
+      let temp = res.main.temp.toFixed(0);
+      $('.weather-city').text(city);
+      $('.weather-temp').text(temp > 0 ? '+ ' + temp : temp);
+      $('.weather-icon').attr('src', `https://openweathermap.org/img/wn/${res.weather[0].icon}@2x.png`);
+    },
+    error: function () {
+      alert("Ob-havoni aniqlashda xatolik yuz berdi");
     }
   });
 
-  $('.dropdown__list-item > p').click(function (e) { 
-    e.preventDefault();
-    if ($(this).parent().find('.dropdown__sublist').hasClass('d-block')) {
-      $(this).parent().find('.dropdown__sublist').removeClass('d-block');
-    } else {
-      $(this).parent().find('.dropdown__sublist').addClass('d-block');
-      $(this).parent().siblings().find('.dropdown__sublist').removeClass('d-block');
-    }
-  });
+  /* tooltip implementation */
+  $("body").tooltip({ selector: '[data-bs-toggle=tooltip]' });
 });

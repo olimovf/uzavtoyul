@@ -16,41 +16,30 @@
       &.show-menu {
         display: block;
       }
+    }
 
-      li {
-        width: 100%;
+    .dropdown li,
+    .dropdown li ul li {
+      width: 100%;
 
-        a,
-        p {
-          text-align: left;
+      a,
+      p {
+        text-align: left;
+
+        &:hover {
+          text-indent: 0;
         }
+      }
+    }
 
-        ul {
-          position: unset;
-          padding: 0 16px;
+    .dropdown li ul,
+    .dropdown li ul li ul {
+      position: unset;
+      padding: 0 16px;
 
-          &.left-side {
-            left: 0;
-            transform: translateX(0);
-          }
-
-          li {
-
-            a,
-            p {
-              text-align: left;
-            }
-
-            ul {
-              position: unset;
-              padding: 0 16px;
-
-              &.left-side {
-                transform: translateX(0);
-              }
-            }
-          }
-        }
+      &.left-side {
+        left: 0;
+        transform: translateX(0);
       }
     }
 
